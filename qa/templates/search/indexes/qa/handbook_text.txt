@@ -1,0 +1,6 @@
+{{ object.user_name }}
+{{ object.category }}
+{{ object.handbook_type }}
+{{ object.label }}
+{{ object.title }}
+{{ object.content }}
