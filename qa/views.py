@@ -491,8 +491,9 @@ def get_chat(request, user_name):
                 ano_user = chat.user_a if chat.user_a != user else chat.user_b
                 json_dict["result"].append({
                     "chat_id": chat.chat_id,
+                    "avatar": user.avatar,
                     "ano_user": ano_user.user_name,
-                    "avatar": ano_user.avatar,
+                    "ano_avatar": ano_user.avatar,
                 })
             else:
                 if last_msg.lattest_message.from_user == user:

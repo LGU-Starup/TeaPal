@@ -1,7 +1,6 @@
 from django.urls import path
 
 from . import views
-from . import search_views
 
 urlpatterns = [
     path('api/user/<str:user_name>/', views.get_user_info),
